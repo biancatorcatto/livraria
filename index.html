@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Livraria</title>
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <h1>Livraria Riordanverse</h1>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Livros</a></li>
-                <li><a href="#">Autores</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="https://rickriordan.com/">Autor</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="cards">
+        <section class="cards" id="livros">
             <div class="card">
                 <img src="img/livro-01.jpg" alt="Livro 1">
                 <h2>Percy Jackson e os Olimpianos</h2>
@@ -42,10 +43,36 @@
                 <button>Comprar</button>
             </div>
         </section>
+        <section class="cards">
+            <div class="card">
+                <img src="img/livro-04.webp" alt="Livro 4">
+                <h2>As Crônicas de Kane</h2>
+                <p>Autor: Rick Riordan</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/livro-05.webp" alt="Livro 5">
+                <h2>Magnus Chase e os Deuses de Asgard</h2>
+                <p>Autor: Rick Riordan</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/livro-06.png" alt="Livro 6">
+                <h2>O Sol e a Estrela</h2>
+                <p>Autor: Rick Riordan</p>
+                <button>Comprar</button>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer id="contato">
         <p>&copy; 2023 Livraria Riordanverse | Criado por Bianca Torcatto Parisoto</p>
+        <ul>
+          <li> <a href="https://www.instagram.com/" class="fa fa-instagram"></a> </li>
+          <li><a href="https://www.whatsapp.com/?lang=pt_br" class="fa fa-whatsapp"></a></li>
+        </ul>
     </footer>
 </body>
 </html>
