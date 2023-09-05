@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*index*/
 body {
     font-family: Arial, sans-serif;
     background-color: #e4e4e4;
@@ -29,6 +30,18 @@ nav a {
     text-decoration: none; 
     color: #fff;
     font-weight: bold; 
+}
+
+#menu li {
+    border-radius: 8px;
+}
+
+#menu li.active {
+    background-color: rgb(8, 197, 211);
+}
+
+#menu li:hover {
+    background-color: rgb(8, 103, 211);
 }
 
 main {
@@ -72,12 +85,104 @@ footer {
     padding: 1rem;
 }
 
-footer ul li {
-    list-style: none;
-    display: inline;
+/*cadastro*/
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: white;
+form {
+  overflow: hidden;
 }
+
+form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form legend {
+  font-weight: bold;
+  color: #777;
+}
+
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+}
+
+
+.radio-group label {
+    display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+}
+  
+.input-check {
+      display: inline-block;
+      margin-right: 10px;
+}
+  
+.input-check input[type="checkbox"] + label {
+      display: inline-block;
+      font-weight: normal;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 120px;
+}
+  
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+
+button[type="reset"] {
+    background-color: #6c757d;
+}
+  
+
+button:hover {
+    background-color: #0056b3;
+ }
